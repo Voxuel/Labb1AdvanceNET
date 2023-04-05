@@ -1,0 +1,15 @@
+C:\Users\Leo\RiderProjects\Labb1AdvanceNET\Labb1AdvanceNET\bin\Debug\net6.0\Labb1AdvanceNET.exe
+C:\Users\Leo\RiderProjects\Labb1AdvanceNET\Labb1AdvanceNET\bin\Debug\net6.0\Labb1AdvanceNET.deps.json
+C:\Users\Leo\RiderProjects\Labb1AdvanceNET\Labb1AdvanceNET\bin\Debug\net6.0\Labb1AdvanceNET.runtimeconfig.json
+C:\Users\Leo\RiderProjects\Labb1AdvanceNET\Labb1AdvanceNET\bin\Debug\net6.0\Labb1AdvanceNET.dll
+C:\Users\Leo\RiderProjects\Labb1AdvanceNET\Labb1AdvanceNET\bin\Debug\net6.0\ref\Labb1AdvanceNET.dll
+C:\Users\Leo\RiderProjects\Labb1AdvanceNET\Labb1AdvanceNET\bin\Debug\net6.0\Labb1AdvanceNET.pdb
+C:\Users\Leo\RiderProjects\Labb1AdvanceNET\Labb1AdvanceNET\obj\Debug\net6.0\Labb1AdvanceNET.csproj.AssemblyReference.cache
+C:\Users\Leo\RiderProjects\Labb1AdvanceNET\Labb1AdvanceNET\obj\Debug\net6.0\Labb1AdvanceNET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Leo\RiderProjects\Labb1AdvanceNET\Labb1AdvanceNET\obj\Debug\net6.0\Labb1AdvanceNET.AssemblyInfoInputs.cache
+C:\Users\Leo\RiderProjects\Labb1AdvanceNET\Labb1AdvanceNET\obj\Debug\net6.0\Labb1AdvanceNET.AssemblyInfo.cs
+C:\Users\Leo\RiderProjects\Labb1AdvanceNET\Labb1AdvanceNET\obj\Debug\net6.0\Labb1AdvanceNET.csproj.CoreCompileInputs.cache
+C:\Users\Leo\RiderProjects\Labb1AdvanceNET\Labb1AdvanceNET\obj\Debug\net6.0\Labb1AdvanceNET.dll
+C:\Users\Leo\RiderProjects\Labb1AdvanceNET\Labb1AdvanceNET\obj\Debug\net6.0\ref\Labb1AdvanceNET.dll
+C:\Users\Leo\RiderProjects\Labb1AdvanceNET\Labb1AdvanceNET\obj\Debug\net6.0\Labb1AdvanceNET.pdb
+C:\Users\Leo\RiderProjects\Labb1AdvanceNET\Labb1AdvanceNET\obj\Debug\net6.0\Labb1AdvanceNET.genruntimeconfig.cache
