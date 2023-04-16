@@ -34,4 +34,11 @@ static void PrintCollection(BoxCollection boxes)
     {
         Console.WriteLine($"The box has dimensions: H{box.Height} L{box.Length} W{box.Width}");
     }
+
+    Console.WriteLine("-------Contains------");
+
+    var result = boxes.Contains(new Box(20, 55, 10)) ? $"The box exists in the collection" :
+        "There is no box with those measures";
+
+    Console.WriteLine(result);
 }
