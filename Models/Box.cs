@@ -10,10 +10,13 @@ public class Box: IEquatable<Box>
         Height= h;
         Length = l;
         Width= w;
+        Volume = h * (l * w);
     }
     public int Height{ get; set; }
     public int Length { get; set; }
     public int Width{ get; set; }
+    public int Volume { get; set; }
+    
 
     public bool Equals(Box? other)
     {

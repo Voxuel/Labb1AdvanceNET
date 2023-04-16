@@ -6,7 +6,7 @@ public class BoxSameVolume : EqualityComparer<Box>
 {
     public override bool Equals(Box? x, Box? y)
     {
-        if (x.Height * x.Length * x.Width == y.Height * y.Length * y.Width)
+        if (x.Volume == y.Volume)
         {
             return true;
         }

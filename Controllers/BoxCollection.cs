@@ -29,14 +29,13 @@ public class BoxCollection : ICollection<Box>
 
     public void Add(Box item)
     {
-        if (!Contains(item) || !Contains(item,new BoxSameVolume()))
+        if (!Contains(item, out var diff))
         {
             _boxes.Add(item);
         }
         else
         {
-            Console.WriteLine($"Box with sizing : H{item.Height}, L{item.Length}, W{item.Width}" +
-                              $" already exists in the collection");
+            Console.WriteLine(diff);
         }
     }
 
@@ -58,12 +57,34 @@ public class BoxCollection : ICollection<Box>
         return false;
     }
 
-    public bool Contains(Box item, BoxSameVolume comparer)
+    public bool Contains(Box item, EqualityComparer<Box> comparer)
     {
         foreach (var box in _boxes)
         {
             if (comparer.Equals(box, item))
             {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public bool Contains(Box item, out string diff)
+    {
+        diff = "";
+        
+        foreach (var box in _boxes)
+        {
+            if (new BoxSameSize().Equals(box, item))
+            {
+                diff = $"A box with sizing {item.Height}x{item.Length}x{item.Width}" +
+                       $" already exists in the collection";
+                return true;
+            }
+            else if (new BoxSameVolume().Equals(box, item))
+            {
+                diff = $"A box with volume {box.Volume} already exists in the collection";
                 return true;
             }
         }
@@ -78,7 +99,17 @@ public class BoxCollection : ICollection<Box>
 
     public bool Remove(Box item)
     {
-        throw new NotImplementedException();
+        for (int i = 0; i < _boxes.Count; i++)
+        {
+            Box tmp = _boxes[i];
+            if (new BoxSameSize().Equals(tmp, item))
+            {
+                _boxes.RemoveAt(i);
+                return true;
+            }
+        }
+
+        return false;
     }
 
     public int Count => _boxes.Count;

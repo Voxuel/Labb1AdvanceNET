@@ -13,6 +13,8 @@ static void App()
     boxCollection.Add(new Box(10,10,10));
     boxCollection.Add(new Box(13,15,95));
     boxCollection.Add(new Box(13,17,33));
+    boxCollection.Add(new Box(10,15,20));
+    boxCollection.Add(new Box(20,15,10));
     
     PrintCollection(boxCollection);
     Console.ReadLine();
@@ -20,6 +22,14 @@ static void App()
 
 static void PrintCollection(BoxCollection boxes)
 {
+    foreach (var box in boxes)
+    {
+        Console.WriteLine($"The box has dimensions: H{box.Height} L{box.Length} W{box.Width}");
+    }
+
+    boxes.Remove(new Box(10, 10, 10));
+
+    Console.WriteLine("--------After Remove---------");
     foreach (var box in boxes)
     {
         Console.WriteLine($"The box has dimensions: H{box.Height} L{box.Length} W{box.Width}");
